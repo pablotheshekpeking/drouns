@@ -18,9 +18,9 @@ export default function Sidebar() {
       flexDirection={'column'}
       justifyContent={'space-between'}
     >
-      <Box w={'full'} h={'auto'}>
+      {/**<Box w={'full'} h={'auto'}>
         <Text className="navText" fontSize={'40px'} fontWeight={900}>Logo</Text>
-      </Box>
+      </Box>*/}
 
 
       <Box
