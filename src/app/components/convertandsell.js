@@ -7,7 +7,7 @@ import { SiConvertio } from "react-icons/si";
 
 export default function ConverSell(){
     return (
-        <Box w={'full'} display={'flex'} justifyContent={'space-between'} gap={'16px'} py={'16px'}>
+        <Box w={'full'} display={'flex'} flexDirection={['column', "column", "row", "row"]} justifyContent={'space-between'} gap={'16px'} py={'16px'}>
             <CustomTransactForm leftAddon={'Sell'} rightAddon={<MdCurrencyExchange color="#5DB9FF" />} />
 
             <CustomTransactForm leftAddon={'Convert'} rightAddon={<SiConvertio color="purple" />} />

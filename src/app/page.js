@@ -44,6 +44,7 @@ export default function Home() {
       m={0}
       p={0}
       display={'flex'}
+      scrollBehavior={'smooth'}
     >
       {/** sidebar */}
       <Box
@@ -54,7 +55,7 @@ export default function Home() {
       >
         <Sidebar />
       </Box>
-      <Box w={'full'} h={'full'} p={'16px'} overflowY='auto'>
+      <Box w={'full'} h={'full'} p={'16px'} overflowY='auto' scrollBehavior={'smooth'}>
         <UserTopBar />
 
         <ConverSell />
