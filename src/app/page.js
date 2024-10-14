@@ -39,12 +39,12 @@ export default function Home() {
   return (
     <Box
       w={'100%'}
-      h={'100vh'}
+      h={['auto', 'auto', 'auto', '100vh']}
       bg={'#F8F8F8'}
       m={0}
       p={0}
       display={'flex'}
-      scrollBehavior={'smooth'}
+      scrollBehavior={['smooth', "smooth", "smooth", 'none']}
     >
       {/** sidebar */}
       <Box
