@@ -49,7 +49,7 @@ export default function Home() {
       {/** sidebar */}
       <Box
         w={'300px'}
-        h={'full'}
+        maxH={'100vh'}
         display={['none', 'none', 'none', 'flex']}
         p={'16px'}
       >
