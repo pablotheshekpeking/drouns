@@ -1,0 +1,30 @@
+/* styles.css */
+.navText {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 40px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.smallBlueText {
+  font-weight: 300;
+  font-size: 8px; /* Base size for smaller screens */
+  color: #5DB9FF;
+}
+
+/* For medium screens (e.g., tablets) */
+@media (min-width: 768px) {
+  .smallBlueText {
+    font-size: 12px;
+  }
+}
+
+/* For larger screens (e.g., desktops) */
+@media (min-width: 1024px) {
+  .smallBlueText {
+    font-size: 12px;
+  }
+}
+
