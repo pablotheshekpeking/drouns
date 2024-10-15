@@ -8,6 +8,7 @@ import { BiSolidUserBadge } from "react-icons/bi";
 import { TiMessages } from "react-icons/ti";
 import { FaAddressCard, FaBook } from "react-icons/fa";
 import '../styles.css'
+import Image from "next/image";
 
 export default function Sidebar() {
   return (
@@ -18,17 +19,15 @@ export default function Sidebar() {
       flexDirection={'column'}
       justifyContent={'space-between'}
     >
-      {/**<Box w={'full'} h={'auto'}>
-        <Text className="navText" fontSize={'40px'} fontWeight={900}>Logo</Text>
-      </Box>*/}
+      <Image src="/logoipsum.png" alt="Logo" width={200} height={200} />
 
 
       <Box
         w={'full'}
-        h={'full'}
+        h={'auto'}
         display={'flex'}
         flexDirection={'column'}
-        gap={4}
+        gap={'4px'}
       >
         <Text className="navText" bg={'#5DB9FF'}>
           <LuLayoutDashboard /> Overview

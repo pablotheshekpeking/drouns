@@ -1,6 +1,6 @@
 // components/LineChart.js
 import React from 'react';
-import { Box, Button, Text } from '@chakra-ui/react';
+import { border, Box, Button, Text } from '@chakra-ui/react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend } from 'chart.js';
 import { MdArrowDropDown } from 'react-icons/md';
