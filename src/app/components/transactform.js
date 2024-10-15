@@ -12,6 +12,7 @@ export default function CustomTransactForm({ leftAddon, rightAddon, input }) {
                     h={'60px'}
                     borderTopLeftRadius={'80px'} // Only round the left side
                     borderBottomLeftRadius={'80px'}
+                    fontWeight={600}
                 >
                     {leftAddon}
                 </InputLeftAddon>
