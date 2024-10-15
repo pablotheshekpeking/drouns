@@ -23,7 +23,7 @@ export default function UserTopBar() {
       {/** Desktop notifications */}
       <Box w={'50%'} h={'auto'} display={['none', 'none', 'none', 'flex']} justifyContent={'flex-end'} alignItems={'center'} gap={12}>
         <Text fontWeight={700} fontSize={['10px', '10px', '14px', '14px']}>Team Alpha</Text>
-        <Text display={'flex'} alignItems={'center'} fontSize={['10px', '10px', '14px', '14px']} gap={'8px'} p={"8px 12px"} bg={'#FFFFFF'} borderRadius={'20px'}>
+        <Text display={'flex'} cursor={'pointer'} alignItems={'center'} fontSize={['10px', '10px', '14px', '14px']} gap={'8px'} p={"8px 12px"} bg={'#FFFFFF'} borderRadius={'20px'}>
           1 unread notification <TbNotification />
         </Text>
       </Box>

@@ -4,10 +4,38 @@ import { InputGroup, InputLeftAddon, Input, InputRightAddon } from "@chakra-ui/r
 
 export default function CustomTransactForm({ leftAddon, rightAddon, input }) {
     return (
-        <InputGroup borderRadius={'40px'}>
-            {leftAddon && <InputLeftAddon bg="white" border={'none'} h={'60px'}>{leftAddon}</InputLeftAddon>}
-            <Input type="num" bg={'white'} border={'none'} h={'60px'} />
-            {rightAddon && <InputRightAddon bg="white" border={'none'} h={'60px'}>{rightAddon}</InputRightAddon>}
+        <InputGroup>
+            {leftAddon && (
+                <InputLeftAddon
+                    bg="white"
+                    border={'none'}
+                    h={'60px'}
+                    borderTopLeftRadius={'80px'} // Only round the left side
+                    borderBottomLeftRadius={'80px'}
+                >
+                    {leftAddon}
+                </InputLeftAddon>
+            )}
+            <Input
+                type="num"
+                bg={'white'}
+                border={'none'}
+                h={'60px'}
+                borderRadius={leftAddon ? '0' : '80px'} // Round all sides if no addon
+                borderTopRightRadius={rightAddon ? '0' : '80px'} // Round only if no right addon
+                borderBottomRightRadius={rightAddon ? '0' : '80px'}
+            />
+            {rightAddon && (
+                <InputRightAddon
+                    bg="white"
+                    border={'none'}
+                    h={'60px'}
+                    borderTopRightRadius={'80px'} // Only round the right side
+                    borderBottomRightRadius={'80px'}
+                >
+                    {rightAddon}
+                </InputRightAddon>
+            )}
         </InputGroup>
     )
 }

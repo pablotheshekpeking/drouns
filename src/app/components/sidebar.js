@@ -28,6 +28,7 @@ export default function Sidebar() {
         display={'flex'}
         flexDirection={'column'}
         gap={'4px'}
+        py={'20px'}
       >
         <Text className="navText" bg={'#5DB9FF'}>
           <LuLayoutDashboard /> Overview

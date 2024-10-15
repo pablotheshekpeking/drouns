@@ -22,7 +22,7 @@ export default function Totalpoints() {
             </Box>
 
             <Center height='100px'>
-                <Divider orientation='vertical' color={'#B9E6FE'} />
+                <Divider orientation='vertical' border={'1px solid'} color={'#B9E6FE'} />
             </Center>
 
             <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'flex-end'} w={'50%'}>
